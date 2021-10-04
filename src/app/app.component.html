@@ -1,4 +1,20 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<h1 style="text-align: center;" class="mb-5">{{title}}</h1>
-<app-test></app-test>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+    <a class="navbar-brand" href="#">Mijn app</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" (click)="switchUsersHidden()">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="switchSecretChatHidden()">Chat</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<app-test [hidden]="usershidden"></app-test>
+<app-secretchat [hidden]="secretchathidden"></app-secretchat>
 

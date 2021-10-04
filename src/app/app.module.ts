@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SecretchatComponent } from './secretchat/secretchat.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    SecretchatComponent
   ],
   imports: [
     BrowserModule,
