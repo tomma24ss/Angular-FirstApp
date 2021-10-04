@@ -1,0 +1,28 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <div class="mb-3 row w-75">   
+                <input [(ngModel)]="name" #ctrl="ngModel" placeholder="Geef je naam" class="form-control col" required>
+                <button (click)="setUser(name)" class="btn btn-primary col col-lg-2">Add</button>
+            </div>
+            <li *ngFor="let user of users" (click)="showUser(user)" class="mb-1">
+                <span #liElement (mouseover)="addStyle(liElement)"  (mouseleave)="removeStyle(liElement)">{{user.name}}</span>
+            </li>
+        </div>
+        <div class="col">
+            <form [formGroup]="form" [hidden]="isHidden">
+                <div class="form-group w-50">
+                    <input type = "text" name = "naam" placeholder = "naam" class="form-control" formControlName="naam">
+                    <br/>
+                    <input type = "number" name = "leeftijd" placeholder = "leeftijd" class="form-control" formControlName="leeftijd">
+                    <br/>
+                    <input type = "text" name = "job" placeholder = "job" class="form-control" formControlName="job">
+                    <br/>
+                    <input type = "text" name = "adres" placeholder = "adres" class="form-control" formControlName="adres">
+                </div>
+             </form>
+        </div>
+    </div>
+</div>
+
