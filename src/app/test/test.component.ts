@@ -14,7 +14,7 @@ interface User {
 })
 
 export class TestComponent implements OnInit {
-  public users: User[] = [];
+  users: User[] = [];
   name: string = '';
   counter: number = 0;
   currentuser: number = 0;
