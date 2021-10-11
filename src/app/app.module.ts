@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SecretchatComponent } from './secretchat/secretchat.component';
+import { WiskFormulesComponent } from './wisk-formules/wisk-formules.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TestComponent,
-    SecretchatComponent
+    SecretchatComponent,
+    WiskFormulesComponent
   ],
   imports: [
     BrowserModule,

@@ -12,9 +12,13 @@
         <li class="nav-item">
           <a class="nav-link" href="#" (click)="switchSecretChatHidden()">Chat</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="switchWiskFormulesHidden()">Wisk</a>
+        </li>
       </ul>
     </div>
 </nav>
 <app-test [hidden]="usershidden"></app-test>
 <app-secretchat [hidden]="secretchathidden"></app-secretchat>
+<app-wisk-formules [hidden]="wiskformuleshidden"></app-wisk-formules>
 
